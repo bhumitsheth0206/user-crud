@@ -27,14 +27,14 @@ const UserForm = (parentProps: any) => {
         firstName: parentProps.formData.firstName ? parentProps.formData.firstName : "",
         lastName: parentProps.formData.lastName ? parentProps.formData.lastName : "",
         email: parentProps.formData.email ? parentProps.formData.email : "",
-        phone: parentProps.formData.phone ? parentProps.formData.phone : ""
+        phone: parentProps.formData.phone ? parentProps.formData.phone : "",
+        active: parentProps.formData.active ? parentProps.formData.active : true
     };
 
     const formik = useFormik({
         initialValues: userFormInitialValues,
         validationSchema: UserSchema,
         onSubmit: (values, props) => {
-            console.log('Values:', values);
             parentProps.onSaveData(values);
             props.resetForm({
                 values: userFormInitialValues,

@@ -1,7 +1,6 @@
 
 import { useEffect, useMemo, useState } from "react";
-import { 
-    // Box, 
+import {  
     Button, 
     Checkbox, 
     Fade, 
@@ -33,6 +32,7 @@ import UserForm from "../Components/UserForm";
 import { UserInterface } from "../Interfaces/User";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, deleteUser, updateUser, userStatus } from "../Redux/UserAction";
+// import { addUser, deleteUser, updateUser } from "../Redux/UserReducer";
 
 type Order = 'asc' | 'desc';
 const headCells = [
@@ -139,6 +139,7 @@ const User = () => {
 
     const deleteUserData = () => {
         handleDeleteModalClose();
+        // dispatch(deleteUser(userData));
         dispatch(deleteUser(userData));
     }
 

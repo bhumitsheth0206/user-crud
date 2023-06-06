@@ -1,5 +1,7 @@
 import { ADD_USER, CLEAR_STORE, DELETE_USER, UPDATE_USER, USER_STATUS } from "./UserType";
 
+// import { createSlice } from "@reduxjs/toolkit";
+
 type initialStateType = {
     addUser: string[];
 }
@@ -63,3 +65,25 @@ const UserReducer = (state = initialState, action: any) => {
 };
 
 export default UserReducer;
+
+// export const userSlice = createSlice({
+//     name: 'user',
+//     initialState,
+//     reducers: {
+//       addUser(state, action) {
+//         state.addUser = [...state.addUser, action.payload];
+//       },
+//       updateUser(state, action) {
+//         const userIndex = state.addUser.findIndex((i: any) => i.id === action.payload.id);
+//         state.addUser[userIndex] = action.payload;
+//       },
+//       deleteUser(state, action) {
+//         // const userList = state.addUser.filter((i: any) => i.id !== action.payload.id);
+//         state.addUser = state.addUser.filter((i: any) => i.id !== action.payload.id);
+//       },
+//     },
+//   });
+  
+//   export const { addUser,  updateUser, deleteUser } = userSlice.actions;
+  
+//   export default userSlice.reducer;
