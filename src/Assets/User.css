@@ -1,0 +1,98 @@
+.content-box-lg {
+    padding: 32px;
+}
+
+.title-heading h3{
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #00008b;
+}
+
+.add-user-btn {
+    background-color: #00008b !important;
+    float: right;
+    color: #fff !important;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 12px !important;
+    text-transform: initial !important;
+}
+
+.search-field {
+    margin-left: 15px !important;
+}
+
+.search-icon {
+    color: #b2beb5;
+}
+
+.search-select {
+    padding-right: 32px;
+    height: 51px;
+    border: 1px solid #b2beb5;
+    border-radius: 4px;
+    margin-top: 3px;
+    color: black !important;
+    padding-left: 10px;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 14px !important;
+}
+
+.search-select:focus, .search-select:hover {
+    border: 1px solid #b2beb5 !important;
+}
+
+.active-btn {
+    background-color: darkgreen !important;
+    color: #fff !important;
+    width: 80px;
+}
+
+.in-active-btn {
+    background-color: red !important;
+    color: #fff !important;
+    width: 80px;
+}
+
+.edit-icon {
+    color: #00008b;
+}
+
+.delete-icon {
+    color: red;
+}
+
+.dot-icon {
+    color: #00008b;
+    margin-top: -4px;
+}
+
+.action-align  {
+    display: flex;
+    flex-direction: row;
+}
+
+.delete-user-modal {
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 400px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.success-btn {
+    background-color: green !important;
+    color: white !important;
+}
+
+.error-btn {
+    background-color: red !important;
+    color: white !important;
+    margin-left: 5px !important;
+}
